@@ -1,0 +1,79 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+.bg{
+  /*background-image: url("sudoku3.jpg");*/
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sudoku{
+	text-align: center;	
+	margin-bottom: 30px;
+	font-size: 1.3em;
+	font-family: "Verdana";
+}
+
+.table{
+	padding: 50px 100px 50px 100px;
+
+	/*background-color: rgb(199, 232, 109);*/
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.t1{
+	font-family: "Verdana";
+	border-collapse: collapse;	
+  	margin: 0;
+	padding: 0;
+}
+
+.t1 td{
+	border:solid black;
+	font-size: 3.5em;
+	height: 100px;
+	width: 100px;
+	padding: 0;
+}
+
+.t1 button{
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border:none;
+	font-size: 1em;
+	text-align: center;
+	font-family: "Verdana";
+	background-color: transparent;
+}
+
+.t2{
+	margin-top: 40px;
+}
+
+.t2 button{
+	height: 90px;
+	width: 90.5px;
+	font-size: 2em;
+	text-align: center;
+	margin:0;
+	font-family: "Verdana";
+	background-color: rgb(247, 246, 151);
+}
+
+.go{
+	margin-top:40px;
+	height: 50px;
+	width: 200px;
+	font-size: 2em;
+	font-family: "Verdana";
+	background-color: rgb(244, 245, 201);
+
+}

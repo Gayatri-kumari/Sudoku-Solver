@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="sudoku.css">
+	<title>sudoku</title>
+</head>
+<body>
+<div class="bg">
+<div class="table">
+	<div class="sudoku">
+		<h1>ŚUDOKU-ŚOLVER</h1>
+	</div>
+	<table class="t1">
+		<tr>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c00" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c01" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c02" onclick="cl(this.id)"></button></td>
+
+			<td><button id="c03" onclick="cl(this.id)"></button></td>
+			<td><button id="c04" onclick="cl(this.id)"></button></td>
+			<td><button id="c05" onclick="cl(this.id)"></button></td>
+
+			<td style="background-color: rgb(244, 245, 201);"><button id="c06" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c07" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c08" onclick="cl(this.id)"></button></td>		
+		</tr>
+		
+		<tr>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c10" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c11" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c12" onclick="cl(this.id)"></button></td>
+
+			<td><button id="c13" onclick="cl(this.id)"></button></td>
+			<td><button id="c14" onclick="cl(this.id)"></button></td>
+			<td><button id="c15" onclick="cl(this.id)"></button></td>
+
+			<td style="background-color: rgb(244, 245, 201);"><button id="c16" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c17" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c18" onclick="cl(this.id)"></button></td>	
+		</tr>
+
+		<tr>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c20" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c21" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c22" onclick="cl(this.id)"></button></td>
+
+			<td><button id="c23" onclick="cl(this.id)"></button></td>
+			<td><button id="c24" onclick="cl(this.id)"></button></td>
+			<td><button id="c25" onclick="cl(this.id)"></button></td>
+
+			<td style="background-color: rgb(244, 245, 201);"><button id="c26" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c27" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c28" onclick="cl(this.id)"></button></td>		
+		</tr>
+
+		<tr>
+			<td><button id="c30" onclick="cl(this.id)"></button></td>
+			<td><button id="c31" onclick="cl(this.id)"></button></td>
+			<td><button id="c32" onclick="cl(this.id)"></button></td>
+
+			<td style="background-color: rgb(244, 245, 201);"><button id="c33" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c34" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c35" onclick="cl(this.id)"></button></td>
+
+			<td><button id="c36" onclick="cl(this.id)"></button></td>
+			<td><button id="c37" onclick="cl(this.id)"></button></td>
+			<td><button id="c38" onclick="cl(this.id)"></button></td>	
+		</tr>
+
+		<tr>
+			<td><button id="c40" onclick="cl(this.id)"></button></td>
+			<td><button id="c41" onclick="cl(this.id)"></button></td>
+			<td><button id="c42" onclick="cl(this.id)"></button></td>
+
+			<td style="background-color: rgb(244, 245, 201);"><button id="c43" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c44" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c45" onclick="cl(this.id)"></button></td>
+
+			<td><button id="c46" onclick="cl(this.id)"></button></td>
+			<td><button id="c47" onclick="cl(this.id)"></button></td>
+			<td><button id="c48" onclick="cl(this.id)"></button></td>	
+		</tr>
+
+		<tr>
+			<td><button id="c50" onclick="cl(this.id)"></button></td>
+			<td><button id="c51" onclick="cl(this.id)"></button></td>
+			<td><button id="c52" onclick="cl(this.id)"></button></td>
+
+			<td style="background-color: rgb(244, 245, 201);"><button id="c53" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c54" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c55" onclick="cl(this.id)"></button></td>
+
+			<td><button id="c56" onclick="cl(this.id)"></button></td>
+			<td><button id="c57" onclick="cl(this.id)"></button></td>
+			<td><button id="c58" onclick="cl(this.id)"></button></td>			
+		</tr>
+
+		<tr>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c60" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c61" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c62" onclick="cl(this.id)"></button></td>
+
+			<td><button id="c63" onclick="cl(this.id)"></button></td>
+			<td><button id="c64" onclick="cl(this.id)"></button></td>
+			<td><button id="c65" onclick="cl(this.id)"></button></td>
+
+			<td style="background-color: rgb(244, 245, 201);"><button id="c66" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c67" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c68" onclick="cl(this.id)"></button></td>	
+
+		<tr>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c70" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c71" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c72" onclick="cl(this.id)"></button></td>
+
+			<td><button id="c73" onclick="cl(this.id)"></button></td>
+			<td><button id="c74" onclick="cl(this.id)"></button></td>
+			<td><button id="c75" onclick="cl(this.id)"></button></td>
+
+			<td style="background-color: rgb(244, 245, 201);"><button id="c76" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c77" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c78" onclick="cl(this.id)"></button></td>	
+		</tr>
+
+		<tr>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c80" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c81" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c82" onclick="cl(this.id)"></button></td>
+
+			<td><button id="c83" onclick="cl(this.id)"></button></td>
+			<td><button id="c84" onclick="cl(this.id)"></button></td>
+			<td><button id="c85" onclick="cl(this.id)"></button></td>
+
+			<td style="background-color: rgb(244, 245, 201);"><button id="c86" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c87" onclick="cl(this.id)"></button></td>
+			<td style="background-color: rgb(244, 245, 201);"><button id="c88" onclick="cl(this.id)"></button></td>	
+		</tr>
+
+	</table>
+	<table class="t2">
+		<tr>
+			<td><button onclick="pick(1)">1</button></td>
+			<td><button onclick="pick(2)">2</button></td>
+			<td><button onclick="pick(3)">3</button></td>
+			<td><button onclick="pick(4)">4</button></td>
+			<td><button onclick="pick(5)">5</button></td>
+			<td><button onclick="pick(6)">6</button></td>
+			<td><button onclick="pick(7)">7</button></td>
+			<td><button onclick="pick(8)">8</button></td>
+			<td><button onclick="pick(9)">9</button></td>	
+			<td><button onclick="pick(0)">-</button></td>						
+		</tr>
+	</table>
+	<button class="go" onclick="display()">GO</button>
+</div>
+</div>
+<script type="text/javascript" src="sudoku.js"></script>
+
+</body>
+</html>
